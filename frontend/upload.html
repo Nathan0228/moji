@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
+
+  <title>上传作品 - 墨迹 Ink Trace</title>
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="upload-page">
+
+  <!-- 宣纸背景 -->
+  <div class="paper-bg"></div>
+
+  <!-- 顶部栏 -->
+  <header class="simple-header">
+
+    <button class="back-btn">
+      ←
+    </button>
+
+    <h2>上传作品</h2>
+
+    <div></div>
+
+  </header>
+
+  <!-- 上传容器 -->
+  <main class="upload-container">
+
+    <!-- 图片上传 -->
+    <div class="upload-image-box" id="uploadBox">
+
+      <input
+        type="file"
+        id="fileInput"
+        accept="image/*"
+        hidden
+      />
+
+      <div class="upload-placeholder">
+
+        <div class="upload-icon">
+          ＋
+        </div>
+
+        <p>上传书法作品</p>
+
+      </div>
+
+      <img id="previewImage" />
+
+    </div>
+
+    <!-- 表单 -->
+    <div class="upload-form">
+
+      <div class="input-group">
+        <input
+          type="text"
+          placeholder="起个名儿"
+          id="title"
+        />
+      </div>
+
+      <div class="input-group">
+        <select id="styleType">
+
+          <option value="">
+            选一个
+          </option>
+
+          <option>
+            楷书
+          </option>
+
+          <option>
+            行书
+          </option>
+
+          <option>
+            草书
+          </option>
+
+          <option>
+            隶书
+          </option>
+
+          <option>
+            篆书
+          </option>
+
+          <option>
+            硬笔
+          </option>
+
+          <option>
+            临摹
+          </option>
+
+          <option>
+            原创
+          </option>
+
+        </select>
+      </div>
+
+      <div class="input-group">
+        <textarea
+          placeholder="写下你此刻的想法..."
+          id="content"
+        ></textarea>
+      </div>
+
+      <div class="upload-progress hidden" id="uploadProgress">
+        <div class="upload-progress-label" id="uploadProgressText">
+          准备上传...
+        </div>
+        <div class="upload-progress-track">
+          <div class="upload-progress-bar" id="uploadProgressBar"></div>
+        </div>
+      </div>
+
+      <button class="publish-btn">
+        发布作品
+      </button>
+
+    </div>
+
+  </main>
+
+  <!-- <div id="bottomNavHost"></div> -->
+
+  <!-- <script src="./js/nav.js"></script> -->
+  <script src="./js/config.js"></script>
+  <script src="./js/upload.js"></script>
+
+</body>
+
+</html>

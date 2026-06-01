@@ -1,0 +1,84 @@
+[
+  {
+    "id":1,
+    "name":"兰亭序",
+    "author":"王羲之 · 东晋",
+    "cover":"./images/copybooks/lantingxu.jpg",
+    "preview":"./images/copybooks/lantingxu.jpg",
+
+    "introduction":"《兰亭序》被誉为天下第一行书，是王羲之于兰亭雅集时所作。",
+
+    "features":[
+      "行书巅峰",
+      "飘逸自然",
+      "用笔圆润",
+      "章法严谨"
+    ],
+
+    "chars":[
+      "永",
+      "和",
+      "之",
+      "雅",
+      "亭",
+      "流"
+    ],
+
+    "advice":"建议先临摹单字，再练习短句，最后整体通临。"
+  },
+  {
+    "id": 2,
+  "name": "洛神赋",
+  "author": "赵孟頫 · 元代",
+  "cover": "./images/copybooks/luoshenfu.jpg",
+  "preview": "./images/copybooks/luoshenfu.jpg",
+
+  "introduction": "《洛神赋》为赵孟頫临摹曹植名篇书法作品，书风温润秀逸，是赵体行书的代表作之一，兼具晋唐遗韵与个人风格。",
+
+  "features": [
+    "行书典范",
+    "温润秀逸",
+    "结构端庄",
+    "笔法流畅"
+  ],
+
+  "chars": [
+    "洛",
+    "神",
+    "赋",
+    "翩",
+    "若",
+    "惊",
+    "鸿"
+  ],
+
+  "advice": "建议重点练习行笔连贯性与字形疏密变化，体会赵体“中和之美”。"
+  },
+  {
+   "id": 3,
+  "name": "祭侄文稿",
+  "author": "颜真卿 · 唐代",
+  "cover": "./images/copybooks/jizhiwengao.jpg",
+  "preview": "./images/copybooks/jizhiwengao.jpg",
+
+  "introduction": "《祭侄文稿》是颜真卿悼念战死侄子的手稿，被誉为“天下第二行书”，情感真挚，笔势悲壮，是书法与情感高度融合的经典之作。",
+
+  "features": [
+    "情感奔涌",
+    "行草结合",
+    "笔势跌宕",
+    "气势悲壮"
+  ],
+
+  "chars": [
+    "祭",
+    "侄",
+    "文",
+    "稿",
+    "悲",
+    "愤"
+  ],
+
+  "advice": "建议在临摹时注重情绪表达，不必刻意工整，重点体会笔势与情感的统一。"
+  }
+]

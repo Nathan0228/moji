@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
+
+  <title>登录 - 墨迹 Ink Trace</title>
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="login-page">
+
+  <!-- 宣纸背景 -->
+  <div class="paper-bg"></div>
+
+  <!-- 登录容器 -->
+  <div class="login-container">
+
+    <!-- Logo -->
+    <div class="login-logo">
+      <h1>墨迹</h1>
+      <span>Ink Trace</span>
+    </div>
+
+    <!-- 标题 -->
+    <div class="login-title">
+      <h2>欢迎回来</h2>
+      <p>记录每一次提笔的成长</p>
+    </div>
+
+    <!-- 表单 -->
+    <div class="login-form">
+
+      <div class="input-group">
+        <input
+          type="text"
+          placeholder="用户名"
+          id="username"
+        />
+      </div>
+
+      <div class="input-group">
+        <input
+          type="password"
+          placeholder="密码"
+          id="password"
+        />
+      </div>
+
+      <div class="input-group" id="confirmPasswordGroup" style="display: none;">
+        <input
+          type="password"
+          placeholder="确认密码"
+          id="confirmPassword"
+        />
+      </div>
+
+      <button class="login-btn">
+        登录
+      </button>
+
+      <div class="switch-text">
+        还没有账号？
+        <span id="switchMode">
+          立即注册
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- <div id="bottomNavHost"></div>
+
+  <script src="./js/nav.js"></script> -->
+  <script src="./js/config.js"></script>
+  <script src="./js/login.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <title>我的 - 墨迹</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="profile-page">
+
+<header class="profile-topbar">
+
+  <div class="timeline-header-copy">
+    <p class="timeline-eyebrow">个人界面</p>
+    </div>
+  
+
+</header>
+
+<main class="profile-container">
+
+  <!-- 用户信息 -->
+  <section class="user-card">
+
+    <img
+      id="avatar"
+      class="avatar"
+      src="./images/default_avatar.webp"
+      alt="头像"
+    >
+
+    <input
+      type="file"
+      id="avatarInput"
+      accept="image/*"
+      hidden
+    >
+
+    <h2 id="username">
+      用户
+    </h2>
+
+    <p id="createdAt" class="join-time">
+      加入墨迹于 ---
+    </p>
+
+    <button
+      class="edit-avatar-btn"
+      id="changeAvatarBtn"
+    >
+      更换头像
+    </button>
+
+  </section>
+
+  
+
+  <!-- 学习统计 -->
+  <section class="section-card">
+
+    <div class="section-header">
+
+      <h3>打卡</h3>
+
+      <span id="workCount">
+        0篇作品
+      </span>
+
+    </div>
+
+    <p class="section-desc">
+      上传作品即可形成你的书法成长轨迹
+    </p>
+
+  <div class="calendar-wrapper">
+
+  <div id="monthLabels" class="month-labels"></div>
+
+  <div class="calendar-body">
+
+    <div class="weekday-labels">
+
+      <span>一</span>
+      <span>二</span>
+      <span>三</span>
+      <span>四</span>
+      <span>五</span>
+      <span>六</span>
+      <span>七</span>
+
+    </div>
+
+    <div
+      id="contribCalendar"
+      class="contrib-calendar"
+    ></div>
+
+  </div>
+
+</div>
+
+    <div class="contrib-legend">
+
+      <span>少</span>
+
+      <div class="legend-blocks">
+
+        <span class="cal-legend level-0"></span>
+        <span class="cal-legend level-1"></span>
+        <span class="cal-legend level-2"></span>
+        <span class="cal-legend level-3"></span>
+        <span class="cal-legend level-4"></span>
+
+      </div>
+
+      <span>多</span>
+
+    </div>
+
+  </section>
+
+  <div id="dayWorksModal" class="day-modal hidden">
+
+  <div class="day-modal-content">
+
+    <div class="day-modal-header">
+
+      <h3 id="modalDate">
+        日期
+      </h3>
+
+      <button id="closeModal">
+        ×
+      </button>
+
+    </div>
+
+    <div id="dayWorksList"></div>
+
+  </div>
+
+</div>
+
+  <!-- 功能菜单 -->
+  <section class="section-card">
+      <a href="./about.html" class="menu-item">
+      <span>关于网站</span>
+      <span>›</span>
+    </a>
+
+
+
+  </section>
+
+  <!-- 关于 -->
+  <section class="section-card">
+
+    <h3>关于墨迹</h3>
+
+    <p class="about-text">
+      墨迹是一个专注于记录书法成长过程的轻量化平台。
+      每一次落笔都值得被记录。
+    </p>
+
+  </section>
+
+  <!-- 退出 -->
+  <button
+    class="logout-btn"
+    id="logoutBtn"
+  >
+    退出登录
+  </button>
+
+  
+
+</main>
+
+<div id="bottomNavHost"></div>
+<script src="./js/nav.js"></script>
+
+<script src="./js/profile.js"></script>
+
+</body>
+</html>

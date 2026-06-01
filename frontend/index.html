@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
+
+  <title>墨迹 Ink Trace</title>
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+  <!-- 宣纸背景 -->
+  <div class="paper-bg"></div>
+
+  <!-- 顶部导航 -->
+  <header class="header">
+
+    <div class="logo">
+      <h1>墨迹</h1>
+      <span>Ink Trace</span>
+    </div>
+
+    <div class="header-right">
+      <button class="upload-btn" data-href="./upload.html">
+        上传
+      </button>
+
+      <button class="upload-btn" id="homeLoginBtn" style="display:none">
+        登录
+      </button>
+    </div>
+
+  </header>
+
+  <!-- Banner -->
+  <section class="hero">
+
+    <div class="hero-content">
+      <h2>笔落惊风雨</h2>
+      <p>一起记录提笔的成长</p>
+    </div>
+
+  </section>
+
+  <!-- 作品列表 -->
+  <main class="works-container" id="worksContainer">
+
+  </main>
+
+  <div id="bottomNavHost"></div>
+
+  <script src="./js/config.js"></script>
+  <script src="./js/nav.js"></script>
+  <script src="./js/app.js"></script>
+
+</body>
+
+</html>

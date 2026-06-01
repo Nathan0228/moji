@@ -1,0 +1,187 @@
+[
+  {
+    "id":1,
+    "name":"王羲之",
+    "dynasty":"东晋·书圣",
+    "avatar":"./images/calligraphers/wangxizhi.jpg",
+    "description":"书圣，《兰亭序》作者。",
+    "introduction":
+      "王羲之，字逸少，东晋时期著名书法家，琅琊临沂人。其书法兼善隶、草、楷、行诸体，尤以行书成就最高，被后世尊称为“书圣”。",
+
+    "features": [
+      "飘逸自然",
+      "中锋圆润",
+      "行书巅峰",
+      "章法灵动"
+    ],
+
+    "quote":
+      "用笔在心，心正则笔正。",
+
+    "comment":
+      "历代书家皆以王羲之为宗，其《兰亭序》被誉为天下第一行书。",
+
+    "timeline": [
+      {
+        "year": "303",
+        "event": "出生于琅琊王氏"
+      },
+      {
+        "year": "353",
+        "event": "兰亭雅集，作《兰亭序》"
+      },
+      {
+        "year": "361",
+        "event": "卒于会稽"
+      }
+    ],
+
+    "works": [
+      {
+        "name": "兰亭序",
+        "image":
+          "./images/copybooks/lantingxu.jpg"
+      },
+      {
+        "name": "快雪时晴帖",
+        "image":
+          "./images/copybooks/kuaixue.jpg"
+      }
+    ]
+  },
+  {
+    "id":2,
+    "name":"颜真卿",
+    "dynasty":"唐代",
+    "avatar":"./images/calligraphers/yanzhenqing.png",
+    "description":"颜体创始人。",
+    "introduction":"颜真卿，字清臣，京兆万年人。其书法雄浑厚重、气势磅礴，开创“颜体”楷书。其风格以筋骨内含、气势外放著称，体现盛唐气象与忠烈人格精神，是中国书法史上极具影响力的书法大家。",
+
+     "features": [
+    "雄浑厚重",
+    "筋骨内含",
+    "气势磅礴",
+    "忠烈之风"
+  ],
+
+  "quote": "书如其人，笔如其心。",
+
+  "comment": "颜体影响后世千年，与柳公权并称“颜筋柳骨”。",
+
+  "timeline": [
+    {
+      "year": "709",
+      "event": "出生于京兆万年"
+    },
+    {
+      "year": "754",
+      "event": "书写《多宝塔碑》"
+    },
+    {
+      "year": "785",
+      "event": "殉国去世"
+    }
+  ],
+
+  "works": [
+    {
+      "name": "多宝塔碑",
+      "image": "./images/copybooks/duobaota.jpg"
+    },
+    {
+      "name": "祭侄文稿",
+      "image": "./images/copybooks/Jizhiwengao.jpg"
+    }
+  ]
+  },
+  {
+    "id":3,
+    "name":"欧阳询",
+    "dynasty":"唐代",
+    "avatar":"./images/calligraphers/ouyangxun.jpg",
+    "description":"楷书四大家之一。",
+    "introduction": "欧阳询，字信本，潭州临湘人，唐代著名书法家。其楷书以法度严谨、结构险劲著称，被誉为“欧体”。书风骨力劲健，布局严谨，兼具险峻与平衡之美，是唐代楷书成熟的重要代表人物。",
+
+  "features": [
+    "结构严谨",
+    "笔力险劲",
+    "法度森严",
+    "初唐楷书典范"
+  ],
+
+  "quote": "险中求稳，严中见美。",
+
+  "comment": "欧阳询楷书被历代奉为入门标准，《九成宫醴泉铭》为楷书经典。",
+
+  "timeline": [
+    {
+      "year": "557",
+      "event": "出生于潭州临湘"
+    },
+    {
+      "year": "627",
+      "event": "完成《九成宫醴泉铭》书写"
+    },
+    {
+      "year": "641",
+      "event": "去世"
+    }
+  ],
+
+  "works": [
+    {
+      "name": "九成宫醴泉铭",
+      "image": "./images/copybooks/jiuchenggong.jpg"
+    },
+    {
+      "name": "卜商帖",
+      "image": "./images/copybooks/bushangtie.jpg"
+    }
+  ]
+  },
+  {
+    "id":4,
+    "name":"赵孟頫",
+    "dynasty":"元代",
+    "avatar":"./images/calligraphers/zhaomengfu.webp",
+    "description":"赵体书法代表人物。",
+    "introduction": "赵孟頫，字子昂，湖州人，元代著名书法家、画家。其书法融合晋唐法度，倡导复古，主张“书画同源”。书风圆润秀逸、端庄典雅，是元代书法由宋入元的重要转折人物，对后世影响深远。",
+
+  "features": [
+    "圆润秀逸",
+    "端庄典雅",
+    "复古书风",
+    "书画同源"
+  ],
+
+  "quote": "用笔千古不易。",
+
+  "comment": "赵体温润流美，是后世楷书学习的重要体系之一。",
+
+  "timeline": [
+    {
+      "year": "1254",
+      "event": "出生于湖州"
+    },
+    {
+      "year": "1295",
+      "event": "形成成熟书风"
+    },
+    {
+      "year": "1322",
+      "event": "去世"
+    }
+  ],
+
+  "works": [
+    {
+      "name": "三门记",
+      "image": "./images/copybooks/sanmenji.jpg"
+    },
+    {
+      "name": "洛神赋",
+      "image": "./images/copybooks/luoshenfu.jpg"
+    }
+  ]
+  }
+]

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>发现 - 墨迹 Ink Trace</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="discovery-page">
+
+  <!-- 顶部导航 -->
+  <div class="timeline-header-copy">
+    <p class="timeline-eyebrow">发现</p>
+    <h2>新知识🧀</h2>
+    </div>
+
+  <main class="discover-container">
+
+    <!-- Hero 区 -->
+    <section class="hero-section">
+      <img src="./images/banner.jpg" alt="书法发现Banner" class="hero-img">
+      <div class="hero-text">
+        <h2>探索书法之美</h2>
+        <p>每日一字，经典碑帖，书法名家，尽在墨迹</p>
+      </div>
+    </section>
+
+    <!-- 每日一字 -->
+    <section class="daily-word-section section-card">
+      <div class="section-header">
+        <h3>每日一字</h3>
+      </div>
+      <div id="dailyWordContainer" class="daily-word-container">
+        <!-- JS填充每日一字 -->
+      </div>
+    </section>
+
+    <!-- 经典碑帖 -->
+    <section class="classic-copybooks-section section-card">
+      <div class="section-header">
+        <h3>经典碑帖</h3>
+      </div>
+      <div id="classicCopybooksContainer" class="classic-copybooks-container">
+        <!-- JS填充碑帖卡片 -->
+      </div>
+    </section>
+
+    <!-- 书法名家 -->
+    <section class="calligraphers-section section-card">
+      <div class="section-header">
+        <h3>书法名家</h3>
+      </div>
+      <div id="calligraphersContainer" class="calligraphers-container">
+        <!-- JS填充名家卡片 -->
+      </div>
+    </section>
+
+    <!-- 今日书法知识 -->
+    <section class="daily-knowledge-section section-card">
+      <div class="section-header">
+        <h3>今日知识</h3>
+      </div>
+      <div id="knowledgeContainer" class="knowledge-container">
+        <!-- JS填充知识内容 -->
+      </div>
+    </section>
+
+     <!-- 书友作品推荐 -->
+    <!-- <section class="friend-works-section section-card">
+      <div class="section-header">
+        <h3>书友作品推荐</h3>
+      </div>
+      <div id="friendWorksContainer" class="friend-works-container"> -->
+        <!-- JS填充作品卡片 -->
+      <!-- </div>
+    </section> -->
+
+  </main>
+
+  </main>
+
+  <!-- 底部导航 -->
+  <div id="bottomNavHost"></div>
+
+  <!-- 引入导航JS -->
+  <script src="./js/nav.js"></script>
+
+  <!-- 发现页逻辑 -->
+  <script type="module" src="./js/discovery.js"></script>
+
+</body>
+</html>

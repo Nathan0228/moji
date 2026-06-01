@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
+
+  <title>作品详情 - 墨迹 Ink Trace</title>
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="detail-page">
+
+  <div class="paper-bg"></div>
+
+  <header class="simple-header">
+
+    <a class="back-btn" href="./index.html">
+      ←
+    </a>
+
+    <div class="timeline-header-copy">
+    <p class="timeline-eyebrow">鉴赏</p>
+    <h2>作品详情</h2>
+    </div>
+
+    <div></div>
+
+  </header>
+
+  <main class="detail-container">
+
+    <section class="detail-card">
+
+      <div class="detail-loading" id="detailLoading">
+        <div class="detail-loading-image"></div>
+        <div class="detail-loading-info">
+          <div class="detail-loading-line short"></div>
+          <div class="detail-loading-line"></div>
+          <div class="detail-loading-line"></div>
+          <div class="detail-loading-line half"></div>
+        </div>
+      </div>
+
+      <div class="detail-error hidden" id="detailError">
+        <p>作品详情加载失败，请检查网络或稍后重试。</p>
+        <button class="detail-error-btn" id="detailRetryBtn" type="button">重新加载</button>
+      </div>
+
+      <div class="detail-image-wrap hidden" id="detailImageWrap" tabindex="0">
+        <img id="detailImage" alt="作品图片" />
+      </div>
+
+      <div class="detail-content hidden" id="detailContent">
+
+        <div class="detail-meta">
+          <span id="detailStyle" class="detail-tag"></span>
+        </div>
+
+        <h1 id="detailTitle"></h1>
+
+        <p id="detailDescription" class="detail-description"></p>
+
+        <p id="detailTraditionalDate" class="detail-traditional-date"></p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <div class="image-preview-overlay hidden" id="imagePreviewOverlay" aria-hidden="true">
+    <div class="image-preview-frame">
+      <button class="image-preview-close" id="closePreview" aria-label="关闭大图">×</button>
+
+      <div class="image-preview-stage" id="imagePreviewStage">
+        <img id="previewImage" alt="作品大图预览" />
+      </div>
+
+      <p class="image-preview-hint">双击重置，单指拖动查看，双指缩放</p>
+
+      <div class="image-preview-toolbar" aria-label="图片操作栏">
+        <button class="preview-control-btn" id="zoomOutBtn" type="button" aria-label="缩小图片">−</button>
+        <button class="preview-control-btn" id="resetViewBtn" type="button" aria-label="重置图片">↻</button>
+        <button class="preview-control-btn" id="zoomInBtn" type="button" aria-label="放大图片">＋</button>
+        <button class="preview-control-btn" id="rotateLeftBtn" type="button" aria-label="向左旋转">↺</button>
+        <button class="preview-control-btn" id="rotateRightBtn" type="button" aria-label="向右旋转">↻</button>
+      </div>
+    </div>
+  </div>
+
+   <div id="bottomNavHost"></div>
+
+  <script src="./js/nav.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/lunar-javascript/lunar.min.js"></script>
+<script type="module" src="./js/detail.js"></script>
+</body>
+
+</html>

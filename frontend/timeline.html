@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
+
+  <title>时间轴 - 墨迹 Ink Trace</title>
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="timeline-page">
+
+  <div class="paper-bg"></div>
+
+  <header class="simple-header">
+
+    <a class="back-btn" href="./index.html">
+      ←
+    </a>
+
+    <div class="timeline-header-copy">
+      <p class="timeline-eyebrow">成长轨迹</p>
+      <h2>时间轴</h2>
+    </div>
+
+    <div></div>
+
+  </header>
+
+  <main class="timeline-container">
+
+    <section class="timeline-summary">
+
+      <div class="summary-card">
+        <p class="summary-label">作品总数</p>
+        <h3 id="timelineCount">-</h3>
+      </div>
+
+      <div class="summary-card">
+        <p class="summary-label">记录天数</p>
+        <h3 id="timelineDayCount">-</h3>
+      </div>
+
+    </section>
+
+    <section class="timeline-feed" id="timelineFeed"></section>
+
+  </main>
+
+  <div id="bottomNavHost"></div>
+
+  <script src="./js/config.js"></script>
+  <script src="./js/nav.js"></script>
+  <script type="module" src="./js/timeline.js"></script>
+
+</body>
+
+</html>

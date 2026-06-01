@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <title>碑帖详情 - 墨迹</title>
+
+  <link
+    rel="stylesheet"
+    href="../css/style.css"
+  >
+
+</head>
+
+<body class="copybook-page">
+
+<div class="paper-bg"></div>
+
+<header class="simple-header">
+
+  <a
+    href="../discovery.html"
+    class="back-btn"
+  >
+    ←
+  </a>
+
+  <h2>经典碑帖</h2>
+
+  <div></div>
+
+</header>
+
+<main class="copybook-container">
+
+  <!-- 封面 -->
+
+  <section class="copybook-hero">
+
+    <img
+      id="copybookCover"
+      src=""
+      alt=""
+    >
+
+  </section>
+
+  <!-- 基础信息 -->
+
+  <section class="section-card">
+
+    <h1 id="copybookName">
+      兰亭序
+    </h1>
+
+    <p
+      id="copybookAuthor"
+      class="copybook-author"
+    >
+      王羲之 · 东晋
+    </p>
+
+  </section>
+
+  <!-- 简介 -->
+
+  <section class="section-card">
+
+    <h3>碑帖简介</h3>
+
+    <p
+      id="copybookIntro"
+      class="copybook-text"
+    ></p>
+
+  </section>
+
+  <!-- 特点 -->
+
+  <section class="section-card">
+
+    <h3>书法特点</h3>
+
+    <div
+      id="copybookFeatures"
+      class="feature-tags"
+    ></div>
+
+  </section>
+
+  <!-- 代表字 -->
+
+  <section class="section-card">
+
+    <h3>代表字</h3>
+
+    <div
+      id="copybookChars"
+      class="char-grid"
+    ></div>
+
+  </section>
+
+  <!-- 高清碑帖 -->
+
+  <section class="section-card">
+
+    <h3>碑帖欣赏</h3>
+
+    <img
+      id="copybookPreview"
+      class="copybook-preview"
+      src=""
+      alt=""
+    >
+
+  </section>
+
+  <!-- 学习建议 -->
+
+  <section class="section-card">
+
+    <h3>学习建议</h3>
+
+    <p
+      id="copybookAdvice"
+      class="copybook-text"
+    ></p>
+
+  </section>
+
+</main>
+
+  <!-- 图片预览覆盖层（用于放大/缩小临摹） -->
+  <div class="image-preview-overlay hidden" id="copybookPreviewOverlay" aria-hidden="true">
+    <div class="image-preview-frame">
+      <button class="image-preview-close" id="copybookPreviewClose" aria-label="关闭大图">×</button>
+      <div class="image-preview-stage" id="copybookPreviewStage">
+        <img id="copybookPreviewImage" alt="碑帖大图预览" />
+      </div>
+      <p class="image-preview-hint">双击重置，拖动平移，滚轮缩放</p>
+    </div>
+  </div>
+
+<script src="./js/copybook.js"></script>
+
+</body>
+
+</html>
