@@ -1,5 +1,5 @@
 # backend/Dockerfile
-FROM golang:1.24-alpine AS build
+FROM golang:1.26-alpine AS build
 RUN apk add --no-cache git build-base
 WORKDIR /app
 COPY go.mod go.sum ./
