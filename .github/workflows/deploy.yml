@@ -6,37 +6,57 @@ on:
       - main
 
 jobs:
-  deploy:
+
+  build-and-push:
     runs-on: ubuntu-latest
 
     steps:
-      # 拉取当前仓库代码
-      - name: Checkout Repository
+
+      - name: Checkout
         uses: actions/checkout@v4
 
-      # 远程部署
+      - name: Login DockerHub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      # backend
+      - name: Build Backend
+        uses: docker/build-push-action@v6
+        with:
+          context: ./backend
+          push: true
+          tags: nathan2830/moji-backend:latest
+
+      # frontend
+      - name: Build Frontend
+        uses: docker/build-push-action@v6
+        with:
+          context: ./frontend
+          push: true
+          tags: nathan2830/moji-frontend:latest
+
+  deploy:
+    needs: build-and-push
+
+    runs-on: ubuntu-latest
+
+    steps:
+
       - name: Deploy to VPS
         uses: appleboy/ssh-action@v1.0.3
+
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
 
           script: |
-            set -e
 
-            echo "进入项目目录..."
             cd /opt/moji
 
-            echo "拉取最新代码..."
-            git fetch --all
-            git reset --hard origin/main
-
-            echo "生成 .env..."
-
             cat > .env <<EOF
-            MYSQL_HOST=${{ secrets.MYSQL_HOST }}
-            MYSQL_PORT=${{ secrets.MYSQL_PORT }}
             MYSQL_USER=${{ secrets.MYSQL_USER }}
             MYSQL_PASSWORD=${{ secrets.MYSQL_PASSWORD }}
             MYSQL_ROOT_PASSWORD=${{ secrets.MYSQL_ROOT_PASSWORD }}
@@ -53,13 +73,8 @@ jobs:
             ALIYUN_OSS_BASE_URL=${{ secrets.ALIYUN_OSS_BASE_URL }}
             EOF
 
-            echo "停止旧容器..."
-            docker compose down
+            docker compose pull
 
-            echo "构建并启动..."
-            docker compose up -d --build
+            docker compose up -d
 
-            echo "清理无用镜像..."
             docker image prune -af
-
-            echo "部署完成"
