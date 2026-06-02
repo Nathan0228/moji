@@ -39,6 +39,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sync docker-compose.yml to VPS
+        run: |
+          printf '%s\n' "${{ secrets.SSH_PRIVATE_KEY }}" > /tmp/deploy_key
+          chmod 600 /tmp/deploy_key
+          mkdir -p /tmp/.ssh
+          scp -o StrictHostKeyChecking=no -i /tmp/deploy_key docker-compose.yml ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/opt/moji/docker-compose.yml
+
       - name: Deploy to VPS
         uses: appleboy/ssh-action@v1.0.3
         with:
