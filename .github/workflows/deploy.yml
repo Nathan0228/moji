@@ -32,13 +32,14 @@ jobs:
             git fetch --all
             git reset --hard origin/main
 
-            echo "生成 backend/.env..."
+            echo "生成 .env..."
 
-            cat > backend/.env <<EOF
+            cat > .env <<EOF
             MYSQL_HOST=${{ secrets.MYSQL_HOST }}
             MYSQL_PORT=${{ secrets.MYSQL_PORT }}
             MYSQL_USER=${{ secrets.MYSQL_USER }}
             MYSQL_PASSWORD=${{ secrets.MYSQL_PASSWORD }}
+            MYSQL_ROOT_PASSWORD=${{ secrets.MYSQL_ROOT_PASSWORD }}
             MYSQL_DATABASE=${{ secrets.MYSQL_DATABASE }}
 
             JWT_SECRET=${{ secrets.JWT_SECRET }}
