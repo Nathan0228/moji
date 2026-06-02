@@ -11,7 +11,7 @@ services:
     restart: unless-stopped
 
   backend:
-    image: nathan2830/moji-backend:latest
+    image: nathan2830/backend:latest
 
     environment:
       MYSQL_HOST: db
@@ -31,18 +31,14 @@ services:
 
     depends_on:
       - db
-
     ports:
       - "8080:8080"
-
     restart: unless-stopped
 
   frontend:
-    image: nathan2830/moji-frontend:latest
-
+    image: nathan2830/frontend:latest
     ports:
       - "3000:80"
-
     restart: unless-stopped
 
 volumes:
