@@ -24,7 +24,7 @@ jobs:
         with:
           context: ./backend
           push: true
-          tags: nathan2830/backend:latest
+          tags: nathan2830/moji-backend:latest
 
       # ===== frontend =====
       - name: Build & Push Frontend
@@ -32,7 +32,7 @@ jobs:
         with:
           context: ./frontend
           push: true
-          tags: nathan2830/frontend:latest
+          tags: nathan2830/moji-frontend:latest
 
   deploy:
     needs: build
